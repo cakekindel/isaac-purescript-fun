@@ -29,7 +29,7 @@ main = launchAff_ $ runSpec [consoleReporter] do
         Some int -> fail $ "expected Some 24, got Some " <> (show int)
         None -> fail $ "expected Some 24, got None"
 
-  {-
+  
   describe "Option#andThen" do
     it "andThen None should still be None" do
       let none  = None :: Option Int
@@ -50,4 +50,4 @@ main = launchAff_ $ runSpec [consoleReporter] do
       case some' of
         Some int -> fail $ "expected None, got Some " <> (show int)
         None -> pure unit
-  -}
+  

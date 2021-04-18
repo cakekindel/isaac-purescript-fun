@@ -20,13 +20,11 @@ main = launchAff_ $ runSpec [consoleReporter] do
     it "`addInts 0 0` should equal `0`" do
       (addInts 0 0) `shouldEqual` 0
 
-  {-
   describe "addTwo" do
     it "`addTwo 2` should equal `4`" do
       (addTwo 2) `shouldEqual` 4
-  -}
 
-  {-
+  
   describe "mulInts" do
     it "`mulInts 0 0` should equal `0`" do
       (mulInts 0 0) `shouldEqual` 0
@@ -34,4 +32,4 @@ main = launchAff_ $ runSpec [consoleReporter] do
       (mulInts 10 0) `shouldEqual` 0
     it "`mulInts 10 2` should equal `20`" do
       (mulInts 10 2) `shouldEqual` 20
-  -}
+  
